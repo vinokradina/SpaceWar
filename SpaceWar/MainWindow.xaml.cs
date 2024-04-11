@@ -56,7 +56,6 @@ namespace SpaceWar
 
             scoreText.Content = "Счёт: " + score;
 
-            bool isEnemyDestroyed = false;
 
             if (enemyCounter < 0)
             {
