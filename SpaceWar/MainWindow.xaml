@@ -1,0 +1,25 @@
+﻿<Window x:Class="SpaceWar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpaceWar"
+        mc:Ignorable="d"
+        Title="Space war" Height="600" Width="800">
+    <Canvas Name ="MyCanvas" Focusable="True" KeyDown="OnKeyDown" KeyUp="OnKeyUp">
+        <Canvas.Background>
+            <ImageBrush ImageSource="/изображения/space_background.jpg"/>
+        </Canvas.Background>
+        <Rectangle x:Name="player" Height="86" Width="92" Canvas.Top="249" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="10">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/изображения/player.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label x:Name="scoreText" Content="Счёт: 0" Height="50" Canvas.Left="677" Canvas.Top="10" Width="123" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" FontSize="20"/>
+        <Label x:Name="GameOverText" Content="Вы проиграли!" Visibility="Hidden" HorizontalContentAlignment="Center" Height="87" Canvas.Left="211" Canvas.Top="231" Width="397" Foreground="White" FontSize="36"/>
+
+    </Canvas>
+
+
+
+</Window>
